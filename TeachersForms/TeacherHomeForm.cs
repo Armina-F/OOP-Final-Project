@@ -31,7 +31,9 @@ namespace OOP_Final_Project
 
         private void ExamMake_btn_Click(object sender, EventArgs e)
         {
-
+            new ExamForm().Show();
+            MyClass.ExamForm = this;
+            this.Hide();
         }
     }
 }
