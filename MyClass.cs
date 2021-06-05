@@ -19,26 +19,25 @@ namespace OOP_Final_Project
         public static FinacialStudentForm AddNewPayment { get; set; }
         public static FinacialStudentForm HistoryPayments { get; set; }
         public static ExamForm NewExamQuestionForm { get; internal set; }
-        public static AVGmarkSample PassFailForm { get;  set; }
+        public static AVGmarkSample PassFailForm { get; set; }
 
         public static DataTable ExecQuerly(string commandText, params string[] listParams)
         {
             DataTable dbtl = new DataTable();
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            SqlCommand comm = new SqlCommand(commandText, connection);
+            int i = 1;
+            foreach (var item in listParams)
             {
-                connection.Open();
-                SqlCommand comm = new SqlCommand(commandText, connection);
-                int i = 1;
-                foreach (var item in listParams)
-                {
-                    comm.Parameters.Add(new SqlParameter("@param" + i, item));
-                    i++;
-                }
-
-                SqlDataAdapter sqlDa = new SqlDataAdapter(comm);
-
-                sqlDa.Fill(dbtl);
+                comm.Parameters.Add(new SqlParameter("@param" + i, item));
+                i++;
             }
+
+            SqlDataAdapter sqlDa = new SqlDataAdapter(comm);
+
+            sqlDa.Fill(dbtl);
+            connection.Close();
             return dbtl;
         }
     }

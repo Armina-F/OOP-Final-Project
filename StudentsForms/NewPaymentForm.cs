@@ -30,8 +30,9 @@ namespace OOP_Final_Project
 
             if (int.TryParse(PayingCost_txt.Text, out int cost))
             {
-                //Add command
-                MyClass.ExecQuerly($"INSERT INTO PaymentHistory (studentId, PaiedCost) VALUES ({MyClass.UserId},{cost}) SELECT 0");
+                //Add command  ADO.NET  ---  EntityFramework 6.0
+                string text_of_SQL_command = $"INSERT INTO PaymentHistory (studentId, PaiedCost) VALUES ({MyClass.UserId},{cost}) SELECT 0";
+                MyClass.ExecQuerly(text_of_SQL_command);
                 MessageBox.Show("مبلغ وارده صحیح می باشد");
             }
             else
