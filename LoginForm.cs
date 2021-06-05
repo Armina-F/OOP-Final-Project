@@ -14,7 +14,7 @@ namespace OOP_Final_Project
     public partial class LoginForm : Form
     {
 
-        readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\OneDrive\Documents\MyNewDB.mdf;Integrated Security=True;Connect Timeout=30 ";
+       
 
         public LoginForm()
         {
@@ -25,7 +25,7 @@ namespace OOP_Final_Project
         private void StudentLogin_btn_Click(object sender, EventArgs e)
         {
             string userRole = "";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(MyClass.connectionString))
 
             {
                 connection.Open();
@@ -51,7 +51,7 @@ namespace OOP_Final_Project
             else if (userRole == "teacher")
             {
                 new TeacherHomeForm().Show();
-                MyClass.studentForm = this;
+                MyClass.teacherForm = this;
                 this.Hide();
             }
             else

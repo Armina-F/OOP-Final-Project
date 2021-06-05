@@ -69,7 +69,6 @@ namespace OOP_Final_Project
             // 
             // Exam_btn
             // 
-            this.Exam_btn.Enabled = false;
             this.Exam_btn.Location = new System.Drawing.Point(435, 299);
             this.Exam_btn.Name = "Exam_btn";
             this.Exam_btn.Size = new System.Drawing.Size(198, 48);

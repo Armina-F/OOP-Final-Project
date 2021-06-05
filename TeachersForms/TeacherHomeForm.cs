@@ -25,14 +25,14 @@ namespace OOP_Final_Project
         private void MarkStudents_btn_Click(object sender, EventArgs e)
         {
             new AddMarkForm().Show();
-            MyClass.TeacherMarkForm = this;
+            MyClass.teacherShowForm = this;
             this.Hide();
         }
 
         private void ExamMake_btn_Click(object sender, EventArgs e)
         {
             new ExamForm().Show();
-            MyClass.ExamForm = this;
+            MyClass.teacherShowForm = this;
             this.Hide();
         }
     }

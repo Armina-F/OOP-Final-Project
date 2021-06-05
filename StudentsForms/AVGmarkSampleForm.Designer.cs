@@ -91,6 +91,7 @@ namespace OOP_Final_Project
             // 
             this.txt3.Location = new System.Drawing.Point(299, 234);
             this.txt3.Name = "txt3";
+            this.txt3.ReadOnly = true;
             this.txt3.Size = new System.Drawing.Size(154, 27);
             this.txt3.TabIndex = 6;
             // 
@@ -107,6 +108,7 @@ namespace OOP_Final_Project
             // 
             this.txt4.Location = new System.Drawing.Point(447, 376);
             this.txt4.Name = "txt4";
+            this.txt4.ReadOnly = true;
             this.txt4.Size = new System.Drawing.Size(125, 27);
             this.txt4.TabIndex = 11;
             // 
@@ -123,6 +125,7 @@ namespace OOP_Final_Project
             // 
             this.txt5.Location = new System.Drawing.Point(169, 376);
             this.txt5.Name = "txt5";
+            this.txt5.ReadOnly = true;
             this.txt5.Size = new System.Drawing.Size(201, 27);
             this.txt5.TabIndex = 13;
             // 

@@ -1,7 +1,7 @@
 ﻿
 namespace OOP_Final_Project
 {
-    partial class Form5
+    partial class PassFailNextTermCondition
     {
         /// <summary>
         /// Required designer variable.
@@ -91,6 +91,7 @@ namespace OOP_Final_Project
             // 
             this.txt2.Location = new System.Drawing.Point(258, 146);
             this.txt2.Name = "txt2";
+            this.txt2.ReadOnly = true;
             this.txt2.Size = new System.Drawing.Size(125, 27);
             this.txt2.TabIndex = 11;
             // 
@@ -105,6 +106,7 @@ namespace OOP_Final_Project
             // 
             this.txt4.Location = new System.Drawing.Point(258, 344);
             this.txt4.Name = "txt4";
+            this.txt4.ReadOnly = true;
             this.txt4.Size = new System.Drawing.Size(125, 27);
             this.txt4.TabIndex = 13;
             // 
@@ -118,7 +120,7 @@ namespace OOP_Final_Project
             this.btn.UseVisualStyleBackColor = true;
             this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
-            // Form5
+            // PassFailNextTermCondition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +134,7 @@ namespace OOP_Final_Project
             this.Controls.Add(this.llbl3);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl1);
-            this.Name = "Form5";
+            this.Name = "PassFailNextTermCondition";
             this.Text = " PassFailNextTermCondition";
             this.ResumeLayout(false);
             this.PerformLayout();

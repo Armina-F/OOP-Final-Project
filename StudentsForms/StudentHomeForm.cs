@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_Final_Project.StudentsForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,19 +29,23 @@ namespace OOP_Final_Project
         private void markCaculator_btn_Click(object sender, EventArgs e)
         {
             new AVGmarkSample().Show();
-            MyClass.markcacForm = this;
+            MyClass.studentHomeForm = this;
+            this.Hide();
           
         }
 
         private void finacial_btn_Click(object sender, EventArgs e)
         {
             new FinacialStudentForm().Show();
-            MyClass.finacialForm = this;
+            MyClass.studentHomeForm = this;
+            this.Hide();
         }
 
         private void Exam_btn_Click(object sender, EventArgs e)
         {
-
+            new StudentExamForm1cs().Show();
+            MyClass.studentHomeForm = this;
+            this.Hide();
         }
     }
 }

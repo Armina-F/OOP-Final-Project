@@ -24,7 +24,7 @@ namespace OOP_Final_Project
         {
             if(!CheckRows())
             {
-                //Message
+                MessageBox.Show("مقداری ورودی صحیح نمی باشند", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -32,7 +32,7 @@ namespace OOP_Final_Project
             {
                 //Add command
                 MyClass.ExecQuerly($"INSERT INTO PaymentHistory (studentId, PaiedCost) VALUES ({MyClass.UserId},{cost}) SELECT 0");
-                MessageBox.Show("مبلغ وارده صحیح یست");
+                MessageBox.Show("مبلغ وارده صحیح می باشد");
             }
             else
             {
@@ -48,12 +48,42 @@ namespace OOP_Final_Project
 
         private bool CheckRows()
         {
-            if(CardNumber_txt .Text.Trim().Length != 16 || !int.TryParse(CardNumber_txt.Text, out _))
+            if(CardNumber_txt .Text.Trim().Length != 16 || !Int64.TryParse(CardNumber_txt.Text, out _))
+            {
+                return false;
+            }
+
+
+
+
+            if (Password_txt.Text.Trim().Length != 6 || !int.TryParse(Password_txt.Text, out _))
+            {
+                return false;
+            }
+
+
+
+            if (Cvv2_txt.Text.Trim().Length != 4 || !int.TryParse(Cvv2_txt.Text, out _))
+            {
+                return false;
+            }
+
+
+            if ((int.Parse(MonthExt_cb.Text) <= 4) && (int.Parse(YearExt_cb.Text) == 1400))
             {
                 return false;
             }
 
             return true;
+
+
+        }
+
+        private void Cancel_btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new FinacialStudentForm().Show();
+
         }
     }
 }

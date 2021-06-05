@@ -40,11 +40,12 @@ namespace OOP_Final_Project.TeachersForms
             this.B_rtxt = new System.Windows.Forms.RichTextBox();
             this.D_rtxt = new System.Windows.Forms.RichTextBox();
             this.Submit_btn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CurrentQuestionNumber_txt
             // 
-            this.CurrentQuestionNumber_txt.Location = new System.Drawing.Point(674, 35);
+            this.CurrentQuestionNumber_txt.Location = new System.Drawing.Point(575, 31);
             this.CurrentQuestionNumber_txt.Name = "CurrentQuestionNumber_txt";
             this.CurrentQuestionNumber_txt.ReadOnly = true;
             this.CurrentQuestionNumber_txt.Size = new System.Drawing.Size(145, 27);
@@ -148,11 +149,21 @@ namespace OOP_Final_Project.TeachersForms
             this.Submit_btn.UseVisualStyleBackColor = true;
             this.Submit_btn.Click += new System.EventHandler(this.Submit_btn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(752, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 20);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "سوال";
+            // 
             // NewExamQuestionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 561);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Submit_btn);
             this.Controls.Add(this.D_rtxt);
             this.Controls.Add(this.B_rtxt);
@@ -184,5 +195,6 @@ namespace OOP_Final_Project.TeachersForms
         private System.Windows.Forms.RichTextBox B_rtxt;
         private System.Windows.Forms.RichTextBox D_rtxt;
         private System.Windows.Forms.Button Submit_btn;
+        private System.Windows.Forms.Label label1;
     }
 }

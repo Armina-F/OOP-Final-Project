@@ -8,16 +8,16 @@ using System.Windows.Forms;
 
 namespace OOP_Final_Project
 {
-    public partial class Form5 : Form
+    public partial class PassFailNextTermCondition : Form
     {
-        public Form5()
+        public PassFailNextTermCondition()
         {
             InitializeComponent();
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
-            string passfail = MyClass.myForm.txt4.Text;
+            string passfail = MyClass.PassFailForm.text1;
             txt2.Text = passfail;
 
             int level = Convert.ToInt16(txt1.Text);

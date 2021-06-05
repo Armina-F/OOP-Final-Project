@@ -138,6 +138,7 @@ namespace OOP_Final_Project
             this.Cancel_btn.TabIndex = 12;
             this.Cancel_btn.Text = "لغو";
             this.Cancel_btn.UseVisualStyleBackColor = true;
+            this.Cancel_btn.Click += new System.EventHandler(this.Cancel_btn_Click);
             // 
             // MonthExt_cb
             // 

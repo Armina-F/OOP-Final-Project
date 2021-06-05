@@ -8,21 +8,18 @@ namespace OOP_Final_Project
 {
     public static class MyClass
     {
-        readonly static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\OneDrive\Documents\MyNewDB.mdf;Integrated Security=True;Connect Timeout=30 ";
+        public readonly static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\OneDrive\Documents\MyNewDB.mdf;Integrated Security=True;Connect Timeout=30 ";
 
 
         public static int UserId { get; set; }
-        public static AVGmarkSample myForm { get; set; }
-        public static StudentHomeForm markcacForm { get; set; }
+        public static StudentHomeForm studentHomeForm { get; set; }
         public static LoginForm studentForm { get; set; }
         public static LoginForm teacherForm { get; set; }
-        public static StudentHomeForm finacialForm { get; set; }
         public static TeacherHomeForm teacherShowForm { get; set; }
-        public static TeacherHomeForm TeacherMarkForm { get; set; }
         public static FinacialStudentForm AddNewPayment { get; set; }
         public static FinacialStudentForm HistoryPayments { get; set; }
-        public static TeacherHomeForm ExamForm { get; set; }
         public static ExamForm NewExamQuestionForm { get; internal set; }
+        public static AVGmarkSample PassFailForm { get;  set; }
 
         public static DataTable ExecQuerly(string commandText, params string[] listParams)
         {

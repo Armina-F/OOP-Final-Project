@@ -14,14 +14,14 @@ namespace OOP_Final_Project
         {
             InitializeComponent();
         }
-        string text1;
-        string text2;
+        public string text1;
+        public string text2;
 
-        private void SetText(string text1, string text2, string mess)
+        private void SetText()
         {
-            text1 = txt4.Text;
-            text2 = txt5.Text;
-            MessageBox.Show(mess, "پیام", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txt4.Text = text1;
+            txt5.Text = text2;
+            MessageBox.Show("ok", "پیام", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btn_Click(object sender, EventArgs e)
@@ -70,10 +70,10 @@ namespace OOP_Final_Project
                 MessageBox.Show("شما مجاز به ادامه تحصیل در ترم بعدی هستید.", "پیام", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+            SetText();
 
-
-
-            MyClass.myForm = this;
+            new PassFailNextTermCondition().Show();
+            MyClass.PassFailForm = this;
             this.Hide();
 
         }

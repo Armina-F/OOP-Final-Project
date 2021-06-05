@@ -36,5 +36,11 @@ namespace OOP_Final_Project
             //MyClass.NewExamQuestionForm = this;
             //this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MyClass.teacherShowForm.Show();
+            this.Close();
+        }
     }
 }
