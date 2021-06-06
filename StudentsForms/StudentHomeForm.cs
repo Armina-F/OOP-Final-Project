@@ -26,32 +26,32 @@ namespace OOP_Final_Project
 
         }
 
-        private void markCaculator_btn_Click(object sender, EventArgs e)
+        private void MarkCaculator_btn_Click(object sender, EventArgs e)
         {
             new AVGmarkSample().Show();
-            MyClass.studentHomeForm = this;
+            MyClass.StudentHome = this;
             this.Hide();
           
         }
 
-        private void finacial_btn_Click(object sender, EventArgs e)
+        private void Finacial_btn_Click(object sender, EventArgs e)
         {
             new FinacialStudentForm().Show();
-            MyClass.studentHomeForm = this;
+            MyClass.StudentHome = this;
             this.Hide();
         }
 
         private void Exam_btn_Click(object sender, EventArgs e)
         {
             new StudentExamForm1cs().Show();
-            MyClass.studentHomeForm = this;
+            MyClass.StudentHome = this;
             this.Hide();
         }
 
         private void Back_btn_Click(object sender, EventArgs e)
         {
 
-            MyClass.studentForm.Show();
+            MyClass.StudentForm.Show();
             this.Close();
         }
     }

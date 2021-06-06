@@ -45,13 +45,13 @@ namespace OOP_Final_Project
             if (userRole == "student")
             {
                 new StudentHomeForm().Show();
-                MyClass.studentForm = this;
+                MyClass.StudentForm = this;
                 this.Hide();
             }
             else if (userRole == "teacher")
             {
                 new TeacherHomeForm().Show();
-                MyClass.teacherForm = this;
+                MyClass.TeacherForm = this;
                 this.Hide();
             }
             else

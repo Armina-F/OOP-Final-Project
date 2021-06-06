@@ -15,7 +15,7 @@ namespace OOP_Final_Project
             InitializeComponent();
         }
 
-        private void historyPayments_btn_Click(object sender, EventArgs e)
+        private void HistoryPayments_btn_Click(object sender, EventArgs e)
         {
             new HistoryPaymentsForm().Show();
             MyClass.HistoryPayments = this;
@@ -32,7 +32,7 @@ namespace OOP_Final_Project
         private void Back_btn_Click(object sender, EventArgs e)
         {
 
-            MyClass.studentForm.Show();
+            MyClass.StudentForm.Show();
             this.Close();
         }
     }

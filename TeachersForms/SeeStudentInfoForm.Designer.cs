@@ -85,7 +85,6 @@ namespace OOP_Final_Project
         }
 
         #endregion
-        private System.Windows.Forms.Label StudentGroupName;
         private System.Windows.Forms.DataGridView StudentInfo_dgv;
         private System.Windows.Forms.Button Show_btn;
         private System.Windows.Forms.Button Back_btn;

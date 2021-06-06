@@ -49,7 +49,7 @@ namespace OOP_Final_Project
         private void Back_btn_Click(object sender, EventArgs e)
         {
 
-            MyClass.teacherShowForm.Show();
+            MyClass.TeacherHome.Show();
             this.Close();
         }
     }

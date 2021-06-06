@@ -24,21 +24,13 @@ namespace OOP_Final_Project
             MessageBox.Show("ok", "پیام", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void btn_Click(object sender, EventArgs e)
+        private void Btn_Click(object sender, EventArgs e)
         {
-
-
-
-
             double ClassMark = Convert.ToDouble(txt1.Text);
             double ExamMark = Convert.ToDouble(txt2.Text);
             double AveMark = Convert.ToDouble(0.6 * ClassMark + 0.4 * ExamMark);
             string numberstring = Convert.ToString(AveMark);
             txt3.Text = numberstring;
-
-
-
-
 
             if (AveMark >= 60 && AveMark <= 65)
             {
@@ -46,42 +38,28 @@ namespace OOP_Final_Project
                 text2 = " مشروط";
                 MessageBox.Show("شما مجاز به ادامه تحصیل در ترم بعدی هستید.", "پیام", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
             else if (AveMark < 60)
             {
                 text1 = " مردود";
                 text2 = "  عدم مشروط";
                 MessageBox.Show("شما مجاز به ادامه تحصیل در ترم بعد نیستید.", "پیام", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
             else if (AveMark > 65 && AveMark < 90)
             {
                 text1 = " قبول";
                 text2 = " عدم مشروط وعدم معدل الف ";
                 MessageBox.Show("شما مجاز به ادامه تحصیل در ترم بعدی هستید.", "پیام", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             }
-
             else
             {
-
                 text1 = " قبول";
                 text2 = " معدل الف ";
                 MessageBox.Show("شما مجاز به ادامه تحصیل در ترم بعدی هستید.", "پیام", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             }
             SetText();
-
             new PassFailNextTermCondition().Show();
             MyClass.PassFailForm = this;
             this.Hide();
-
         }
-
-
-
-
-
-
     }
 }

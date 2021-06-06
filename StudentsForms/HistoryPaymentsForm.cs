@@ -25,7 +25,7 @@ namespace OOP_Final_Project
         private void Back_btn_Click(object sender, EventArgs e)
         {
 
-            MyClass.studentForm.Show();
+            MyClass.StudentForm.Show();
             this.Close();
         }
     }

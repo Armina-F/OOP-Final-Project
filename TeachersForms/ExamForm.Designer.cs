@@ -87,7 +87,7 @@ namespace OOP_Final_Project
             this.Exit_btn.TabIndex = 5;
             this.Exit_btn.Text = "برگشت";
             this.Exit_btn.UseVisualStyleBackColor = true;
-            this.Exit_btn.Click += new System.EventHandler(this.button1_Click);
+            this.Exit_btn.Click += new System.EventHandler(this.Button1_Click);
             // 
             // ExamForm
             // 

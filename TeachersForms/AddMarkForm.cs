@@ -25,23 +25,17 @@ namespace OOP_Final_Project
                     MyClass.ExecQuerly(" UPDATE LevelMarks SET ClassMark = @param1 WHERE StudentId = @param2; SELECT 0"
                             , mark.ToString(), Id.ToString());
                     MessageBox.Show("  نمره ثبت شد");
-
                     SeeAllStudents();
                 }
-
                 else
                 {
                     MessageBox.Show("  لطفا نمره را انتخاب کنید ");
                 }
             }
-
             else
             {
                 MessageBox.Show("  لطفا یک زبان آموز را انتخاب کنید ");
             }
-
-
-
         }
 
         void SeeAllStudents()
@@ -58,12 +52,11 @@ namespace OOP_Final_Project
 
         private void Back_btn_Click(object sender, EventArgs e)
         {
-
-            MyClass.teacherShowForm.Show();
+            MyClass.TeacherHome.Show();
             this.Close();
         }
 
-        private void students_dgv_SelectionChanged(object sender, EventArgs e)
+        private void Students_dgv_SelectionChanged(object sender, EventArgs e)
         {
             ClassMark_txt.Text = "";
             if (students_dgv.SelectedRows != null && students_dgv.SelectedRows.Count> 0)
@@ -73,6 +66,11 @@ namespace OOP_Final_Project
                 FirstName_txt.Text = row.Cells[1].Value.ToString();
                 LastName_txt.Text = row.Cells[2].Value.ToString();
             }
+        }
+
+        private void AddMarkForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

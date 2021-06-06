@@ -127,13 +127,10 @@ namespace OOP_Final_Project
 
         private System.Windows.Forms.Label UserName_lbl;
         private System.Windows.Forms.Label Password_lbl;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox password_txt;
         private System.Windows.Forms.Button Login_btn;
         private System.Windows.Forms.Button Exit_btn;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox usernmae_txtx;
-        private System.Windows.Forms.TextBox usernmae_txt;
         private System.Windows.Forms.TextBox username_txt;
     }
 }

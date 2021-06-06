@@ -39,15 +39,17 @@ namespace OOP_Final_Project.StudentsForms
                 List<ExamClass> examAnswers = new List<ExamClass>();
                 foreach (DataRow row in examQuestionsDT.Rows)
                 {
-                    ExamClass examClass = new ExamClass();
-                    examClass.ExamId = int.Parse(row["ExamId"].ToString());
-                    examClass.QuestionId = int.Parse(row["QuestionId"].ToString());
-                    examClass.QuestionText = row["QuestionText"].ToString();
-                    examClass.AnswerA = row["AnswerA "].ToString();
-                    examClass.AnswerB = row["AnswerB"].ToString();
-                    examClass.AnswerC = row["AnswerC"].ToString();
-                    examClass.AnswerD = row["AnswerD"].ToString();
-                    examClass.CorrectAnswerId = int.Parse(row["CorrectAnswerId"].ToString());
+                    ExamClass examClass = new ExamClass
+                    {
+                        ExamId = int.Parse(row["ExamId"].ToString()),
+                        QuestionId = int.Parse(row["QuestionId"].ToString()),
+                        QuestionText = row["QuestionText"].ToString(),
+                        AnswerA = row["AnswerA "].ToString(),
+                        AnswerB = row["AnswerB"].ToString(),
+                        AnswerC = row["AnswerC"].ToString(),
+                        AnswerD = row["AnswerD"].ToString(),
+                        CorrectAnswerId = int.Parse(row["CorrectAnswerId"].ToString())
+                    };
 
                     NewExamQuestionForm questionForm = new NewExamQuestionForm(examClass);
                     questionForm.ShowDialog();
@@ -84,7 +86,7 @@ namespace OOP_Final_Project.StudentsForms
         private void Back_btn_Click(object sender, EventArgs e)
         {
 
-            MyClass.studentForm.Show();
+            MyClass.StudentForm.Show();
             this.Close();
         }
     }

@@ -147,7 +147,7 @@ namespace OOP_Final_Project
             this.btn.TabIndex = 15;
             this.btn.Text = "ثبت";
             this.btn.UseVisualStyleBackColor = true;
-            this.btn.Click += new System.EventHandler(this.btn_Click);
+            this.btn.Click += new System.EventHandler(this.Btn_Click);
             // 
             // AVGmarkSample
             // 

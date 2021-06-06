@@ -56,7 +56,7 @@ namespace OOP_Final_Project
             this.finacial_btn.TabIndex = 1;
             this.finacial_btn.Text = "وضعیت مالی";
             this.finacial_btn.UseVisualStyleBackColor = true;
-            this.finacial_btn.Click += new System.EventHandler(this.finacial_btn_Click);
+            this.finacial_btn.Click += new System.EventHandler(this.Finacial_btn_Click);
             // 
             // markCaculator_btn
             // 
@@ -66,7 +66,7 @@ namespace OOP_Final_Project
             this.markCaculator_btn.TabIndex = 2;
             this.markCaculator_btn.Text = "محاسبه گر معدل";
             this.markCaculator_btn.UseVisualStyleBackColor = true;
-            this.markCaculator_btn.Click += new System.EventHandler(this.markCaculator_btn_Click);
+            this.markCaculator_btn.Click += new System.EventHandler(this.MarkCaculator_btn_Click);
             // 
             // Exam_btn
             // 

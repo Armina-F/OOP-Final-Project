@@ -18,27 +18,27 @@ namespace OOP_Final_Project
         private void StudentsClassesName_btn_Click(object sender, EventArgs e)
         {
             new SeeStudentInfoForm().Show();
-            MyClass.teacherShowForm= this ;
+            MyClass.TeacherHome= this ;
             this.Hide();
         }
 
         private void MarkStudents_btn_Click(object sender, EventArgs e)
         {
             new AddMarkForm().Show();
-            MyClass.teacherShowForm = this;
+            MyClass.TeacherHome = this;
             this.Hide();
         }
 
         private void ExamMake_btn_Click(object sender, EventArgs e)
         {
             new ExamForm().Show();
-            MyClass.teacherShowForm = this;
+            MyClass.TeacherHome = this;
             this.Hide();
         }
 
         private void Back_btn_Click(object sender, EventArgs e)
         {
-            MyClass.teacherForm.Show();
+            MyClass.TeacherForm.Show();
             this.Close();
         }
     }

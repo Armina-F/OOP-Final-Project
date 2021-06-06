@@ -27,19 +27,12 @@ namespace OOP_Final_Project
                 {
                     new NewExamQuestionForm(examId, i).ShowDialog();
                 }
-
             }
-
-
-
-            //new NewExamQuestionForm().Show();
-            //MyClass.NewExamQuestionForm = this;
-            //this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            MyClass.teacherShowForm.Show();
+            MyClass.TeacherHome.Show();
             this.Close();
         }
     }

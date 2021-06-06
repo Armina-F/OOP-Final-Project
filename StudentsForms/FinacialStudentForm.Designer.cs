@@ -55,7 +55,7 @@ namespace OOP_Final_Project
             this.historyPayments_btn.TabIndex = 1;
             this.historyPayments_btn.Text = "سوابق تمامی پرداخت ها ";
             this.historyPayments_btn.UseVisualStyleBackColor = true;
-            this.historyPayments_btn.Click += new System.EventHandler(this.historyPayments_btn_Click);
+            this.historyPayments_btn.Click += new System.EventHandler(this.HistoryPayments_btn_Click);
             // 
             // NewPayment_btn
             // 
