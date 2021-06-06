@@ -34,13 +34,14 @@ namespace OOP_Final_Project
             this.StudentsClassesName_btn = new System.Windows.Forms.Button();
             this.MarkStudents_btn = new System.Windows.Forms.Button();
             this.ExamMake_btn = new System.Windows.Forms.Button();
+            this.Back_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(63, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(60, 101);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(271, 262);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -59,7 +60,7 @@ namespace OOP_Final_Project
             // 
             // MarkStudents_btn
             // 
-            this.MarkStudents_btn.Location = new System.Drawing.Point(480, 193);
+            this.MarkStudents_btn.Location = new System.Drawing.Point(481, 165);
             this.MarkStudents_btn.Name = "MarkStudents_btn";
             this.MarkStudents_btn.Size = new System.Drawing.Size(174, 54);
             this.MarkStudents_btn.TabIndex = 2;
@@ -69,7 +70,7 @@ namespace OOP_Final_Project
             // 
             // ExamMake_btn
             // 
-            this.ExamMake_btn.Location = new System.Drawing.Point(481, 327);
+            this.ExamMake_btn.Location = new System.Drawing.Point(482, 271);
             this.ExamMake_btn.Name = "ExamMake_btn";
             this.ExamMake_btn.Size = new System.Drawing.Size(173, 60);
             this.ExamMake_btn.TabIndex = 3;
@@ -77,11 +78,22 @@ namespace OOP_Final_Project
             this.ExamMake_btn.UseVisualStyleBackColor = true;
             this.ExamMake_btn.Click += new System.EventHandler(this.ExamMake_btn_Click);
             // 
+            // Back_btn
+            // 
+            this.Back_btn.Location = new System.Drawing.Point(482, 388);
+            this.Back_btn.Name = "Back_btn";
+            this.Back_btn.Size = new System.Drawing.Size(172, 56);
+            this.Back_btn.TabIndex = 4;
+            this.Back_btn.Text = "بازگشت به منوی قبلی";
+            this.Back_btn.UseVisualStyleBackColor = true;
+            this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
+            // 
             // TeacherHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(817, 479);
+            this.Controls.Add(this.Back_btn);
             this.Controls.Add(this.ExamMake_btn);
             this.Controls.Add(this.MarkStudents_btn);
             this.Controls.Add(this.StudentsClassesName_btn);
@@ -99,5 +111,6 @@ namespace OOP_Final_Project
         private System.Windows.Forms.Button StudentsClassesName_btn;
         private System.Windows.Forms.Button MarkStudents_btn;
         private System.Windows.Forms.Button ExamMake_btn;
+        private System.Windows.Forms.Button Back_btn;
     }
 }

@@ -34,6 +34,7 @@ namespace OOP_Final_Project.StudentsForms
             this.label2 = new System.Windows.Forms.Label();
             this.ExamSart_btn = new System.Windows.Forms.Button();
             this.ExamNames_cb = new System.Windows.Forms.ComboBox();
+            this.Back_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,9 +65,9 @@ namespace OOP_Final_Project.StudentsForms
             // 
             // ExamSart_btn
             // 
-            this.ExamSart_btn.Location = new System.Drawing.Point(308, 345);
+            this.ExamSart_btn.Location = new System.Drawing.Point(425, 347);
             this.ExamSart_btn.Name = "ExamSart_btn";
-            this.ExamSart_btn.Size = new System.Drawing.Size(162, 44);
+            this.ExamSart_btn.Size = new System.Drawing.Size(184, 48);
             this.ExamSart_btn.TabIndex = 4;
             this.ExamSart_btn.Text = "شروع آزمون";
             this.ExamSart_btn.UseVisualStyleBackColor = true;
@@ -80,11 +81,22 @@ namespace OOP_Final_Project.StudentsForms
             this.ExamNames_cb.Size = new System.Drawing.Size(151, 28);
             this.ExamNames_cb.TabIndex = 5;
             // 
+            // Back_btn
+            // 
+            this.Back_btn.Location = new System.Drawing.Point(137, 347);
+            this.Back_btn.Name = "Back_btn";
+            this.Back_btn.Size = new System.Drawing.Size(182, 48);
+            this.Back_btn.TabIndex = 6;
+            this.Back_btn.Text = "بازگشت به منوی قبلی";
+            this.Back_btn.UseVisualStyleBackColor = true;
+            this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
+            // 
             // StudentExamForm1cs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Back_btn);
             this.Controls.Add(this.ExamNames_cb);
             this.Controls.Add(this.ExamSart_btn);
             this.Controls.Add(this.label2);
@@ -104,5 +116,6 @@ namespace OOP_Final_Project.StudentsForms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button ExamSart_btn;
         private System.Windows.Forms.ComboBox ExamNames_cb;
+        private System.Windows.Forms.Button Back_btn;
     }
 }

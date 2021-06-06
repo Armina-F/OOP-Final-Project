@@ -34,6 +34,7 @@ namespace OOP_Final_Project
             this.finacial_btn = new System.Windows.Forms.Button();
             this.markCaculator_btn = new System.Windows.Forms.Button();
             this.Exam_btn = new System.Windows.Forms.Button();
+            this.Back_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,11 +78,22 @@ namespace OOP_Final_Project
             this.Exam_btn.UseVisualStyleBackColor = true;
             this.Exam_btn.Click += new System.EventHandler(this.Exam_btn_Click);
             // 
+            // Back_btn
+            // 
+            this.Back_btn.Location = new System.Drawing.Point(435, 415);
+            this.Back_btn.Name = "Back_btn";
+            this.Back_btn.Size = new System.Drawing.Size(198, 51);
+            this.Back_btn.TabIndex = 5;
+            this.Back_btn.Text = "بازگشت به منوی قبلی";
+            this.Back_btn.UseVisualStyleBackColor = true;
+            this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
+            // 
             // StudentHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 462);
+            this.ClientSize = new System.Drawing.Size(735, 492);
+            this.Controls.Add(this.Back_btn);
             this.Controls.Add(this.Exam_btn);
             this.Controls.Add(this.markCaculator_btn);
             this.Controls.Add(this.finacial_btn);
@@ -100,5 +112,6 @@ namespace OOP_Final_Project
         private System.Windows.Forms.Button finacial_btn;
         private System.Windows.Forms.Button markCaculator_btn;
         private System.Windows.Forms.Button Exam_btn;
+        private System.Windows.Forms.Button Back_btn;
     }
 }

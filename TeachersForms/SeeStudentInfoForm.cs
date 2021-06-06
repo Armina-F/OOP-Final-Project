@@ -46,6 +46,11 @@ namespace OOP_Final_Project
             StudentInfo_dgv.DataSource = dbtl;
         }
 
-        
+        private void Back_btn_Click(object sender, EventArgs e)
+        {
+
+            MyClass.teacherShowForm.Show();
+            this.Close();
+        }
     }
 }

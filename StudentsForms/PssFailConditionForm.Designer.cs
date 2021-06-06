@@ -99,6 +99,7 @@ namespace OOP_Final_Project
             // 
             this.txt3.Location = new System.Drawing.Point(258, 240);
             this.txt3.Name = "txt3";
+            this.txt3.ReadOnly = true;
             this.txt3.Size = new System.Drawing.Size(125, 27);
             this.txt3.TabIndex = 12;
             // 

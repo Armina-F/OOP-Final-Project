@@ -41,6 +41,7 @@ namespace OOP_Final_Project.TeachersForms
             this.D_rtxt = new System.Windows.Forms.RichTextBox();
             this.Submit_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.NextQuestion_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CurrentQuestionNumber_txt
@@ -141,7 +142,7 @@ namespace OOP_Final_Project.TeachersForms
             // 
             // Submit_btn
             // 
-            this.Submit_btn.Location = new System.Drawing.Point(321, 468);
+            this.Submit_btn.Location = new System.Drawing.Point(234, 464);
             this.Submit_btn.Name = "Submit_btn";
             this.Submit_btn.Size = new System.Drawing.Size(183, 63);
             this.Submit_btn.TabIndex = 10;
@@ -158,11 +159,23 @@ namespace OOP_Final_Project.TeachersForms
             this.label1.TabIndex = 11;
             this.label1.Text = "سوال";
             // 
+            // NextQuestion_btn
+            // 
+            this.NextQuestion_btn.Location = new System.Drawing.Point(550, 464);
+            this.NextQuestion_btn.Name = "NextQuestion_btn";
+            this.NextQuestion_btn.Size = new System.Drawing.Size(170, 63);
+            this.NextQuestion_btn.TabIndex = 12;
+            this.NextQuestion_btn.Text = "سوال بعدی";
+            this.NextQuestion_btn.UseVisualStyleBackColor = true;
+            this.NextQuestion_btn.Visible = false;
+            this.NextQuestion_btn.Click += new System.EventHandler(this.NextQuestion_btn_Click);
+            // 
             // NewExamQuestionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 561);
+            this.ClientSize = new System.Drawing.Size(902, 557);
+            this.Controls.Add(this.NextQuestion_btn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Submit_btn);
             this.Controls.Add(this.D_rtxt);
@@ -196,5 +209,6 @@ namespace OOP_Final_Project.TeachersForms
         private System.Windows.Forms.RichTextBox D_rtxt;
         private System.Windows.Forms.Button Submit_btn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button NextQuestion_btn;
     }
 }

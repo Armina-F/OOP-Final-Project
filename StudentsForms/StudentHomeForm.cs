@@ -47,5 +47,12 @@ namespace OOP_Final_Project
             MyClass.studentHomeForm = this;
             this.Hide();
         }
+
+        private void Back_btn_Click(object sender, EventArgs e)
+        {
+
+            MyClass.studentForm.Show();
+            this.Close();
+        }
     }
 }

@@ -69,6 +69,7 @@ namespace OOP_Final_Project
             // 
             this.password_txt.Location = new System.Drawing.Point(391, 200);
             this.password_txt.Name = "password_txt";
+            this.password_txt.PasswordChar = '*';
             this.password_txt.Size = new System.Drawing.Size(183, 27);
             this.password_txt.TabIndex = 3;
             // 
@@ -102,7 +103,7 @@ namespace OOP_Final_Project
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,7 +115,7 @@ namespace OOP_Final_Project
             this.Controls.Add(this.username_txt);
             this.Controls.Add(this.Password_lbl);
             this.Controls.Add(this.UserName_lbl);
-            this.Name = "Form1";
+            this.Name = "LoginForm";
             this.Text = "LogIn";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

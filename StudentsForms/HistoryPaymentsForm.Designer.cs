@@ -33,12 +33,14 @@ namespace OOP_Final_Project
             this.StudentId_lbl = new System.Windows.Forms.Label();
             this.StudentId_txt = new System.Windows.Forms.TextBox();
             this.Show_btn = new System.Windows.Forms.Button();
+            this.Back_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PaymentsHistory_dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // PaymentsHistory_dgv
             // 
             this.PaymentsHistory_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.PaymentsHistory_dgv.BackgroundColor = System.Drawing.SystemColors.Control;
             this.PaymentsHistory_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PaymentsHistory_dgv.Location = new System.Drawing.Point(43, 103);
             this.PaymentsHistory_dgv.Name = "PaymentsHistory_dgv";
@@ -67,19 +69,30 @@ namespace OOP_Final_Project
             // 
             // Show_btn
             // 
-            this.Show_btn.Location = new System.Drawing.Point(421, 573);
+            this.Show_btn.Location = new System.Drawing.Point(615, 563);
             this.Show_btn.Name = "Show_btn";
-            this.Show_btn.Size = new System.Drawing.Size(146, 46);
+            this.Show_btn.Size = new System.Drawing.Size(175, 52);
             this.Show_btn.TabIndex = 5;
             this.Show_btn.Text = "نمایش";
             this.Show_btn.UseVisualStyleBackColor = true;
             this.Show_btn.Click += new System.EventHandler(this.Show_btn_Click);
+            // 
+            // Back_btn
+            // 
+            this.Back_btn.Location = new System.Drawing.Point(330, 563);
+            this.Back_btn.Name = "Back_btn";
+            this.Back_btn.Size = new System.Drawing.Size(167, 52);
+            this.Back_btn.TabIndex = 6;
+            this.Back_btn.Text = "بازگشت به منوی قبلی";
+            this.Back_btn.UseVisualStyleBackColor = true;
+            this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
             // 
             // HistoryPaymentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 644);
+            this.Controls.Add(this.Back_btn);
             this.Controls.Add(this.Show_btn);
             this.Controls.Add(this.StudentId_txt);
             this.Controls.Add(this.StudentId_lbl);
@@ -98,5 +111,6 @@ namespace OOP_Final_Project
         private System.Windows.Forms.Label StudentId_lbl;
         private System.Windows.Forms.TextBox StudentId_txt;
         private System.Windows.Forms.Button Show_btn;
+        private System.Windows.Forms.Button Back_btn;
     }
 }

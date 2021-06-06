@@ -51,6 +51,7 @@ namespace OOP_Final_Project
         {
             if(CardNumber_txt .Text.Trim().Length != 16 || !Int64.TryParse(CardNumber_txt.Text, out _))
             {
+                MessageBox.Show("شماره کارت اشتباه هست ");
                 return false;
             }
 
@@ -59,6 +60,7 @@ namespace OOP_Final_Project
 
             if (Password_txt.Text.Trim().Length != 6 || !int.TryParse(Password_txt.Text, out _))
             {
+                MessageBox.Show("رمز اشتباه هست ");
                 return false;
             }
 
@@ -66,12 +68,14 @@ namespace OOP_Final_Project
 
             if (Cvv2_txt.Text.Trim().Length != 4 || !int.TryParse(Cvv2_txt.Text, out _))
             {
+                MessageBox.Show(" اشتباه هست cvv2 ");
                 return false;
             }
 
 
             if ((int.Parse(MonthExt_cb.Text) <= 4) && (int.Parse(YearExt_cb.Text) == 1400))
             {
+                MessageBox.Show(" تاریخ انقضا اشتباه هست ");
                 return false;
             }
 

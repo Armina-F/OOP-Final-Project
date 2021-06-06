@@ -35,5 +35,11 @@ namespace OOP_Final_Project
             MyClass.teacherShowForm = this;
             this.Hide();
         }
+
+        private void Back_btn_Click(object sender, EventArgs e)
+        {
+            MyClass.teacherForm.Show();
+            this.Close();
+        }
     }
 }

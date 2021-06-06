@@ -21,5 +21,12 @@ namespace OOP_Final_Project
                 .ExecQuerly($"SELECT id, PaiedCost FROM PaymentHistory WHERE studentId = {MyClass.UserId} ORDER BY id");
             StudentId_txt.Text = MyClass.UserId.ToString();
         }
+
+        private void Back_btn_Click(object sender, EventArgs e)
+        {
+
+            MyClass.studentForm.Show();
+            this.Close();
+        }
     }
 }

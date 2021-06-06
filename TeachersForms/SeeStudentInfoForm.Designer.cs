@@ -31,12 +31,14 @@ namespace OOP_Final_Project
         {
             this.StudentInfo_dgv = new System.Windows.Forms.DataGridView();
             this.Show_btn = new System.Windows.Forms.Button();
+            this.Back_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.StudentInfo_dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // StudentInfo_dgv
             // 
             this.StudentInfo_dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.StudentInfo_dgv.BackgroundColor = System.Drawing.SystemColors.Control;
             this.StudentInfo_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StudentInfo_dgv.Location = new System.Drawing.Point(12, 92);
             this.StudentInfo_dgv.Name = "StudentInfo_dgv";
@@ -56,11 +58,22 @@ namespace OOP_Final_Project
             this.Show_btn.UseVisualStyleBackColor = true;
             this.Show_btn.Click += new System.EventHandler(this.Show_btn_Click);
             // 
+            // Back_btn
+            // 
+            this.Back_btn.Location = new System.Drawing.Point(363, 546);
+            this.Back_btn.Name = "Back_btn";
+            this.Back_btn.Size = new System.Drawing.Size(136, 54);
+            this.Back_btn.TabIndex = 5;
+            this.Back_btn.Text = "بازگشت به منوی قبلی";
+            this.Back_btn.UseVisualStyleBackColor = true;
+            this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
+            // 
             // SeeStudentInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1144, 821);
+            this.Controls.Add(this.Back_btn);
             this.Controls.Add(this.Show_btn);
             this.Controls.Add(this.StudentInfo_dgv);
             this.Name = "SeeStudentInfoForm";
@@ -75,5 +88,6 @@ namespace OOP_Final_Project
         private System.Windows.Forms.Label StudentGroupName;
         private System.Windows.Forms.DataGridView StudentInfo_dgv;
         private System.Windows.Forms.Button Show_btn;
+        private System.Windows.Forms.Button Back_btn;
     }
 }
